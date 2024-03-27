@@ -1,0 +1,165 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Poppins", sans-serif; */
+
+body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+    background-image: url(https://t3.ftcdn.net/jpg/04/83/90/18/360_F_483901821_46VsNR67uJC3xIKQN4aaxR6GtAZhx9G8.jpg);
+}
+
+img {
+    width: 100%;
+    max-width: 170px;
+    height: 100%;
+    max-height: 170px;
+    object-fit: contain;
+    border-radius: 0.5em;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0.5rem 0.5rem  rgb(0, 0, 0);
+}
+
+img:hover {
+    transform: scale(105%);
+    transition: 175ms;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 20rem;
+    height: 100vh;
+    max-height: 45rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0.5rem 0.5rem  rgb(0, 0, 0);
+}
+
+.judul {
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-height: 8rem;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hasil {
+    width: 16rem;
+    height: 1rem;
+}
+
+div h2 {
+    font-size: large;
+}
+
+div input {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    max-width: 18rem;
+    height: 100%;
+    max-height: 3rem;
+    border-radius: 1rem;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    font-size: larger;
+}
+
+input::-webkit-input-placeholder {
+    font-size: small;
+    color: #cfcfcf;
+}
+
+div button {
+    width: 100%;
+    max-width: 18rem;
+    height: 100%;
+    max-height: 3rem;
+    border-radius: 1rem;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: #ffff;
+}
+
+div button:hover {
+    background-color: rgb(39, 39, 39);
+    transform: scale(105%);
+    transition: 175ms;
+}
+
+.login {
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: x-large;
+}
+
+.login img {
+    width: 100%;
+    max-width: 19rem;
+    max-height: 13rem;
+    object-fit: cover;
+    box-shadow: none;
+    border: none;
+}
+
+.login input {
+    margin-top: -3rem;
+    padding: 0;
+}
+
+.login p {
+    max-width: 90%;
+    font-size: small;
+}
+
+.login label {
+    align-self: flex-start;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.pojok {
+    margin-right: 1rem;
+    align-self: end;
+    font-size: small;
+}
+
+.login a {
+    text-decoration: none;
+    color: rgb(64, 137, 231);
+}
