@@ -7,88 +7,111 @@
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
-    <div class="judul">
-      <h1>BERBAGAI RUMUS BANGUN DATAR</h1>
+    <!-- Login -->
+    <div id="loginContainer"> 
+      <form action="" class="univStyle , login , container" id="loginForm">
+        <h2>Selamat datang di<br />Rumus Bangun Datar!</h2>
+        <img
+          src="https://i.pinimg.com/736x/36/57/cb/3657cb35e7d18f8af12e5f6ffd6e3b0d.jpg"
+          alt="loginImage"
+        />
+        <p>
+          Mudahkan perhitungan Matematika-mu bersama kami! Login untuk menikmati
+          fiturnya!
+        </p>
+        <label for="username">Username</label><br />
+        <input type="text" name="username" id="username" placeholder="Masukkan username" required/>
+        <label for="password">Password</label><br />
+        <input type="password" name="password" id="password" placeholder="Masukkan password" required/>
+        <button type="submit">Login</button>
+      </form>
     </div>
 
-    <div>
-      <h2>Perhitungan Luas Lingkaran</h2>
-      <img
-        src="https://i.pinimg.com/originals/40/be/d0/40bed0c3fa7a18a4ce7e74c021c90507.jpg"
-        alt="lingkaran"
-      />
-      <label for="input"> Jari-jari lingkaran</label>
-      <input
-        type="text"
-        id="jrjr"
-        placeholder="Masukkan Jari-jari dalam cm"
-      /><br />
-      <button id="btnLing">Hasil</button>
-      <div class="hasil" id="luasLing"></div>
+    <!-- perhitungan -->
+    <div class="univStyle , mainpage" id="luasContainer">
+      <div class="judul , container">
+        <h1>BERBAGAI RUMUS BANGUN DATAR</h1>
+      </div>
+      <div class="container">
+        <h2>Perhitungan Luas Lingkaran</h2>
+        <img
+          src="https://i.pinimg.com/originals/40/be/d0/40bed0c3fa7a18a4ce7e74c021c90507.jpg"
+          alt="lingkaran"
+        />
+        <label for="input"> Jari-jari lingkaran</label>
+        <input
+          type="text"
+          id="jrjr"
+          placeholder="Masukkan Jari-jari dalam cm"
+        /><br />
+        <button id="btnLing">Hasil</button>
+        <div class="hasil" id="luasLing"></div>
+      </div>
+      <div class="container">
+        <h2>Perhitungan Luas Segitiga</h2>
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihjwv5Q2UZcJL8tCNoGxi0-xW-J9X-8OvobI-hagalJrm-fn8VJE8bQwbwDbru9miwpsjCtcAiWOjooTK6zPb35MoXnCFARDXohXkqJKY3uRDL8TdTC8lCyLxyGJEzAwHbMr72JMjNXp5Y/w640-h360/segitiga_ss_1.png"
+          alt="Segitiga"
+        />
+        <label for="input"> Alas segitiga</label>
+        <input
+          type="text"
+          id="inpAlasS"
+          placeholder="Masukkan Alas dalam cm"
+        /><br />
+        <label for="input"> Tinggi</label>
+        <input
+          type="text"
+          id="inpTinggiS"
+          placeholder="Masukkan Tinggi dalam cm"
+        /><br />
+        <button id="btnSegitiga">Hasil</button>
+        <div class="hasil" id="hasilSegitiga"></div>
+      </div>
+      <div class="container">
+        <h2>Perhitungan Luas Persegi Panjang</h2>
+        <img
+          src="https://image.popmama.com/content-images/post/20211016/persegi-panjangjpg-e4525a1b6b43aa4058ee5c26c7d77c3c.jpg?width=600&height=auto"
+          alt="persegiPanjang"
+        />
+        <label for="input"> Panjang </label>
+        <input
+          type="text"
+          id="inpPanjang"
+          placeholder="Masukkan Panjang dalam cm"
+        /><br />
+        <label for="input"> Lebar </label>
+        <input
+          type="text"
+          id="inpLebar"
+          placeholder="Masukkan Lebar dalam cm"
+        /><br />
+        <button id="btnPp">Hasil</button>
+        <div class="hasil" id="hasilPp"></div>
+      </div>
+      <div class="container">
+        <h2>Perhitungan Luas Jajar Genjang</h2>
+        <img
+          src="https://o-cdn-cas.sirclocdn.com/parenting/images/rumus_luas_jajar_genjang-x.width-800.format-webp.webp"
+          alt="jajargenjang"
+        />
+        <label for="input"> Panjang alas</label>
+        <input
+          type="text"
+          id="inpAlasJg"
+          placeholder="Masukkan Panjang dalam cm"
+        /><br />
+        <label for="input"> Tinggi</label>
+        <input
+          type="text"
+          id="inpTinggiJg"
+          placeholder="Masukkan tinggi dalam cm"
+        /><br />
+        <button id="btnJg">Hasil</button>
+        <div class="hasil" id="hasilJg"></div>
+      </div>
     </div>
-    <div>
-      <h2>Perhitungan Luas Segitiga</h2>
-      <img
-        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihjwv5Q2UZcJL8tCNoGxi0-xW-J9X-8OvobI-hagalJrm-fn8VJE8bQwbwDbru9miwpsjCtcAiWOjooTK6zPb35MoXnCFARDXohXkqJKY3uRDL8TdTC8lCyLxyGJEzAwHbMr72JMjNXp5Y/w640-h360/segitiga_ss_1.png"
-        alt="Segitiga"
-      />
-      <label for="input"> Alas segitiga</label>
-      <input
-        type="text"
-        id="inpAlasS"
-        placeholder="Masukkan Alas dalam cm"
-      /><br />
-      <label for="input"> Tinggi</label>
-      <input
-        type="text"
-        id="inpTinggiS"
-        placeholder="Masukkan Tinggi dalam cm"
-      /><br />
-      <button id="btnSegitiga">Hasil</button>
-      <div class="hasil" id="hasilSegitiga"></div>
-    </div>
-    <div>
-      <h2>Perhitungan Luas Persegi Panjang</h2>
-      <img
-        src="https://image.popmama.com/content-images/post/20211016/persegi-panjangjpg-e4525a1b6b43aa4058ee5c26c7d77c3c.jpg?width=600&height=auto"
-        alt="persegiPanjang"
-      />
-      <label for="input"> Panjang </label>
-      <input
-        type="text"
-        id="inpPanjang"
-        placeholder="Masukkan Panjang dalam cm"
-      /><br />
-      <label for="input"> Lebar </label>
-      <input
-        type="text"
-        id="inpLebar"
-        placeholder="Masukkan Lebar dalam cm"
-      /><br />
-      <button id="btnPp">Hasil</button>
-      <div class="hasil" id="hasilPp"></div>
-    </div>
-    <div>
-      <h2>Perhitungan Luas Jajar Genjang</h2>
-      <img
-        src="https://o-cdn-cas.sirclocdn.com/parenting/images/rumus_luas_jajar_genjang-x.width-800.format-webp.webp"
-        alt="jajargenjang"
-      />
-      <label for="input"> Panjang alas</label>
-      <input
-        type="text"
-        id="inpAlasJg"
-        placeholder="Masukkan Panjang dalam cm"
-      /><br />
-      <label for="input"> Tinggi</label>
-      <input
-        type="text"
-        id="inpTinggiJg"
-        placeholder="Masukkan tinggi dalam cm"
-      /><br />
-      <button id="btnJg">Hasil</button>
-      <div class="hasil" id="hasilJg"></div>
-    </div>
+    
   </body>
 </html>
 <script src="/script/main.js"></script>

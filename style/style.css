@@ -13,8 +13,30 @@ html {
 /* font-family: "Poppins", sans-serif; */
 
 body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    background-image: url(https://t3.ftcdn.net/jpg/04/83/90/18/360_F_483901821_46VsNR67uJC3xIKQN4aaxR6GtAZhx9G8.jpg);
+}
+
+#luasContainer {
+    display: none;
+}
+
+/* #loginForm {
+    display: none;
+} */
+
+.mainpage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.univStyle {
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
@@ -22,7 +44,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 3rem;
-    background-image: url(https://t3.ftcdn.net/jpg/04/83/90/18/360_F_483901821_46VsNR67uJC3xIKQN4aaxR6GtAZhx9G8.jpg);
 }
 
 img {
@@ -43,7 +64,7 @@ img:hover {
     transition: 175ms;
 }
 
-div {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,15 +93,23 @@ div {
 }
 
 .hasil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 16rem;
-    height: 1rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0.5rem 0.5rem  rgb(0, 0, 0);
 }
 
-div h2 {
+.container h2 {
     font-size: large;
 }
 
-div input {
+.container input {
     font-family: "Poppins", sans-serif;
     width: 100%;
     max-width: 18rem;
@@ -99,7 +128,7 @@ input::-webkit-input-placeholder {
     color: #cfcfcf;
 }
 
-div button {
+.container button {
     width: 100%;
     max-width: 18rem;
     height: 100%;
@@ -111,7 +140,7 @@ div button {
     color: #ffff;
 }
 
-div button:hover {
+.container button:hover {
     background-color: rgb(39, 39, 39);
     transform: scale(105%);
     transition: 175ms;
@@ -152,11 +181,6 @@ div button:hover {
     align-self: flex-start;
     margin-left: 1rem;
     font-weight: bold;
-}
-.pojok {
-    margin-right: 1rem;
-    align-self: end;
-    font-size: small;
 }
 
 .login a {
